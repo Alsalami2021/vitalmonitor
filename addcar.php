@@ -83,6 +83,7 @@ if(isset($_POST['btn']))
 	if(isset($result))
 	{
 		echo'<script>alert("add car done");</script>';
+		header("Location: mc.php");
 	}
 	else{
 		echo'<h1 class="alert alert-danger">add car failed</h1>';
