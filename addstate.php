@@ -62,9 +62,8 @@ include'adminnav.php';
 		<input type="text" class="form-control" name="s" placeholder="Current state"><br>
 		
 
-		<input type="text" class="form-control" name="lat" placeholder="lattiude"><br>
 
-		<input type="text" class="form-control" name="lan" placeholder="langtitude"><br>
+		<input type="text" class="form-control" name="lan" placeholder="Location information"><br>
 
 		<input type="text" class="form-control" name="temp" placeholder="Temperture"><br>
 
@@ -91,7 +90,7 @@ include'adminnav.php';
 $heart=isset($_POST['h'])?$_POST['h']:'';
 $name=isset($_POST['n'])?$_POST['n']:'';
 $ss=isset($_POST['s'])?$_POST['s']:'';
-$lat=isset($_POST['lat'])?$_POST['lat']:'';
+$lat="00";
 $lan=isset($_POST['lan'])?$_POST['lan']:'';
 $temp=isset($_POST['temp'])?$_POST['temp']:'';
 $pre=isset($_POST['pre'])?$_POST['pre']:'';
