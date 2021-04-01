@@ -55,7 +55,7 @@ include'adminnav.php';
 
 <br>
 
-<input value="Add Patient" type="submit" class="btn btn-primary btn-lg" name="btn">
+<input value="Add Doctor" type="submit" class="btn btn-primary btn-lg" name="btn">
 	</form>
 					
 				</div>
@@ -91,6 +91,7 @@ if(isset($_POST['btn']))
 	if(isset($result))
 	{
 		echo'<script>alert("add Doctor done");</script>';
+		header("Location: md.php");
 	}
 	else{
 		echo'<h1 class="alert alert-danger">add Doctor failed</h1>';
