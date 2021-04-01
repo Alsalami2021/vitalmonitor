@@ -92,6 +92,7 @@ if(isset($_POST['btn']))
 	if(isset($result))
 	{
 		echo'<script>alert("add Patine done");</script>';
+		header("Location: mp.php");
 	}
 	else{
 		echo'<h1 class="alert alert-danger">add Patine failed</h1>';
